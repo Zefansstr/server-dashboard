@@ -1,94 +1,63 @@
-# 🚀 Dashboard Streamlit dengan Login Keren
+# 🎮 Gaming Dashboard
 
-Dashboard modern dengan halaman login yang stylish menggunakan Streamlit.
+Dashboard analytics untuk platform gaming dengan real-time data dan comprehensive reporting.
 
-## ✨ Fitur
+## 🚀 Features
 
-- 🔐 Halaman login dengan UI modern dan gradient design
-- 📊 Dashboard dengan metrics dan charts
-- 🎨 CSS kustom dengan efek glassmorphism
-- 🔒 Sistem autentikasi sederhana
-- 📱 Responsive design
+- **💰 Financial Analytics**: Comprehensive revenue and profit analysis
+- **📊 Real-time Data**: Live updates dengan data filtering
+- **💱 Currency Conversion**: Auto-convert SGD to MYR
+- **📈 Interactive Charts**: Plotly visualizations
+- **🎯 Multi-line Support**: 18 different gaming lines
+- **📋 Operational Reports**: KPI dan performance metrics
 
-## 🛠️ Instalasi
+## 🔧 Setup
 
-1. **Clone atau download project ini**
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Jalankan aplikasi:**
-   ```bash
-   streamlit run app.py
-   ```
-
-4. **Buka browser dan akses:**
-   ```
-   http://localhost:8501
-   ```
-
-## 🔑 Demo Credentials
-
-Gunakan salah satu dari credentials berikut untuk login:
-
-| Username | Password |
-|----------|----------|
-| `admin`  | `admin123` |
-| `user`   | `password` |
-| `demo`   | `demo123` |
-
-## 📋 Struktur Project
-
-```
-GOOGLE FORM/
-├── app.py              # Aplikasi utama Streamlit
-├── requirements.txt    # Dependencies Python
-└── README.md          # Dokumentasi project
+### Local Development
+```bash
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
-## 🎨 Fitur UI
+### Login Credentials
+- **Admin**: admin / admin123
+- **User**: user / password
+- **Demo**: demo / demo123
 
-- **Glassmorphism Design**: Background blur dengan transparansi
-- **Gradient Colors**: Warna gradient yang modern dan menarik
-- **Hover Effects**: Animasi saat hover pada tombol
-- **Responsive Layout**: Tampilan yang responsif di berbagai ukuran layar
-- **Custom CSS**: Styling khusus untuk pengalaman pengguna yang lebih baik
+## 📊 Data
 
-## 📊 Dashboard Features
+Dashboard menggunakan data Excel:
+- **deposit_july06.xlsx**: Deposit transactions
+- **withdrawjuly06.xlsx**: Withdrawal transactions  
+- **member_reportJanJuly06.xlsx**: Member activity reports
 
-- **Metrics Cards**: Menampilkan KPI utama (Users, Revenue, Growth)
-- **Interactive Charts**: Bar chart dan line chart untuk analytics
-- **Sidebar Navigation**: Menu navigasi dengan info user dan logout
-- **Real-time Data**: Simulasi data real-time (dapat diintegrasikan dengan database)
+**Data Range**: 31 Januari 2025 - 6 Juli 2025
 
-## 🔧 Customization
+## 💱 Currency
 
-Anda dapat dengan mudah menyesuaikan:
+Semua amount ditampilkan dalam **MYR**. SGD secara otomatis dikonversi menggunakan rate **1 SGD = 3.4 MYR**.
 
-- **Warna dan Theme**: Edit CSS di function `load_css()`
-- **User Database**: Tambah user di dictionary `USERS`
-- **Dashboard Content**: Modifikasi function `dashboard_page()`
-- **Charts dan Metrics**: Update data di section analytics
+## 🌐 Live Demo
 
-## 🚀 Next Steps
+Dashboard tersedia online di: [Coming Soon]
 
-Untuk pengembangan lebih lanjut, Anda bisa menambahkan:
+## 📈 Analytics Sections
 
-- Database integration (PostgreSQL, MySQL, MongoDB)
-- User registration dan forgot password
-- Role-based access control
-- File upload dan download
-- Email notifications
-- API integrations
-- Export data functionality
+1. **Currency Information** - Conversion details
+2. **Line Information** - Distribution per line
+3. **Key Metrics** - Financial indicators
+4. **Financial Analytics** - Detailed metrics
+5. **Average Performance** - Per case/member stats
+6. **Line Performance Analysis** - Multi-tab analysis
+7. **Operational Reports** - KPIs dan summary
 
-## 📝 Notes
+## 🛠️ Built With
 
-- Password di-hash menggunakan SHA256 untuk keamanan dasar
-- Session state digunakan untuk manage user authentication
-- CSS kustom memungkinkan styling yang fleksibel
-- Struktur modular memudahkan pengembangan lebih lanjut
+- **Streamlit** - Web framework
+- **Pandas** - Data manipulation
+- **Plotly** - Interactive charts
+- **OpenPyXL** - Excel file handling
 
-Selamat coding! 🎉 
+## 📄 License
+
+Private project for internal use. 
